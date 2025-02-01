@@ -10,7 +10,8 @@ import java.time.LocalDateTime;
 public class RecurrentTask extends Task {
     private Duration interval;
 
-    public RecurrentTask(String title, String description, LocalDateTime deadline, boolean done) {
+    public RecurrentTask(String title, String description, LocalDateTime deadline, boolean done, Duration interval) {
         super(title, description, deadline, done);
+        this.interval = interval;
     }
 }

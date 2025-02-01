@@ -61,7 +61,7 @@ public class ToDoList {
 
     public List<Task> getUncompletedTasks() {
         return allTasks.stream()
-                .filter(Task::isDone)
+                .filter(task -> !task.isDone())
                 .sorted(Comparator.comparing(Task::getDeadline))
                 .collect(Collectors.toList());
     }
@@ -69,7 +69,7 @@ public class ToDoList {
     public List<WorkTask> getWorkTasks() {
         List<WorkTask> workTasks = new ArrayList<>();
         for (Task task : allTasks) {
-            if (task.getClass() == WorkTask.class) {
+            if (task instanceof WorkTask) {
                 workTasks.add((WorkTask) task);
             }
         }
@@ -82,7 +82,7 @@ public class ToDoList {
     public List<PersonalTask> getPersonalTasks() {
         List<PersonalTask> personalTasks = new ArrayList<>();
         for (Task task : allTasks) {
-            if (task.getClass() == PersonalTask.class) {
+            if (task instanceof PersonalTask) {
                 personalTasks.add((PersonalTask) task);
             }
         }
@@ -95,7 +95,7 @@ public class ToDoList {
     public List<RecurrentTask> getRecurrentTasks() {
         List<RecurrentTask> recurrentTasks = new ArrayList<>();
         for (Task task : allTasks) {
-            if (task.getClass() == RecurrentTask.class) {
+            if (task instanceof RecurrentTask) {
                 recurrentTasks.add((RecurrentTask) task);
             }
         }
