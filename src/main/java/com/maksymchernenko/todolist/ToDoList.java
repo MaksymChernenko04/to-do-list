@@ -19,30 +19,32 @@ public class ToDoList {
         allTasks.add(task);
     }
 
-    public void editTask(int number, Task task) {
-        Task oldTask = getTask(number);
-        oldTask.setNumber(task.getNumber());
-        oldTask.setTitle(task.getTitle());
-        oldTask.setDescription(task.getDescription());
-        oldTask.setDeadline(task.getDeadline());
-        oldTask.setDone(task.isDone());
+    public void editTask(int number) {
 
-        if (oldTask.getClass() == WorkTask.class && task.getClass() == WorkTask.class) {
-            WorkTask workTask = (WorkTask) oldTask;
-            workTask.setManager(((WorkTask) task).getManager());
-        }
 
-        if (oldTask.getClass() == RecurrentTask.class && task.getClass() == RecurrentTask.class) {
-            RecurrentTask recurrentTask = (RecurrentTask) oldTask;
-            recurrentTask.setInterval(((RecurrentTask) task).getInterval());
-        }
+//        Task oldTask = getTask(number);
+//        oldTask.setNumber(task.getNumber());
+//        oldTask.setTitle(task.getTitle());
+//        oldTask.setDescription(task.getDescription());
+//        oldTask.setDeadline(task.getDeadline());
+//        oldTask.setDone(task.isDone());
+//
+//        if (oldTask.getClass() == WorkTask.class && task.getClass() == WorkTask.class) {
+//            WorkTask workTask = (WorkTask) oldTask;
+//            workTask.setManager(((WorkTask) task).getManager());
+//        }
+//
+//        if (oldTask.getClass() == RecurrentTask.class && task.getClass() == RecurrentTask.class) {
+//            RecurrentTask recurrentTask = (RecurrentTask) oldTask;
+//            recurrentTask.setInterval(((RecurrentTask) task).getInterval());
+//        }
     }
 
     public void removeTask(int number) {
         allTasks.remove(getTask(number));
     }
 
-    private Task getTask(int number) {
+    public Task getTask(int number) {
         for (Task task : allTasks) {
             if (task.getNumber() == number) {
                 return task;
@@ -66,7 +68,7 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
-    public List<WorkTask> getWorkTasks() {
+    public List<Task> getWorkTasks() {
         List<WorkTask> workTasks = new ArrayList<>();
         for (Task task : allTasks) {
             if (task instanceof WorkTask) {
@@ -79,7 +81,7 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
-    public List<PersonalTask> getPersonalTasks() {
+    public List<Task> getPersonalTasks() {
         List<PersonalTask> personalTasks = new ArrayList<>();
         for (Task task : allTasks) {
             if (task instanceof PersonalTask) {
@@ -92,7 +94,7 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
-    public List<RecurrentTask> getRecurrentTasks() {
+    public List<Task> getRecurrentTasks() {
         List<RecurrentTask> recurrentTasks = new ArrayList<>();
         for (Task task : allTasks) {
             if (task instanceof RecurrentTask) {
