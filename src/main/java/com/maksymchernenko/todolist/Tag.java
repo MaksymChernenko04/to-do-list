@@ -7,5 +7,19 @@ public enum Tag {
     EVENT,
     HOBBY,
     CARE,
-    FINANCE
+    FINANCE,
+    OTHER;
+
+    public static Tag fromString(String tag) {
+        return switch (tag.toLowerCase()) {
+            case "housework" -> HOUSEWORK;
+            case "study" -> STUDY;
+            case "travel" -> TRAVEL;
+            case "event" -> EVENT;
+            case "hobby" -> HOBBY;
+            case "care" -> CARE;
+            case "finance" -> FINANCE;
+            default -> OTHER;
+        };
+    }
 }
