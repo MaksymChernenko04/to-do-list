@@ -2,9 +2,13 @@ package com.maksymchernenko.todolist;
 
 import lombok.Getter;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Getter
@@ -19,25 +23,43 @@ public class ToDoList {
         allTasks.add(task);
     }
 
-    public void editTask(int number) {
-
-
-//        Task oldTask = getTask(number);
-//        oldTask.setNumber(task.getNumber());
-//        oldTask.setTitle(task.getTitle());
-//        oldTask.setDescription(task.getDescription());
-//        oldTask.setDeadline(task.getDeadline());
-//        oldTask.setDone(task.isDone());
-//
-//        if (oldTask.getClass() == WorkTask.class && task.getClass() == WorkTask.class) {
-//            WorkTask workTask = (WorkTask) oldTask;
-//            workTask.setManager(((WorkTask) task).getManager());
-//        }
-//
-//        if (oldTask.getClass() == RecurrentTask.class && task.getClass() == RecurrentTask.class) {
-//            RecurrentTask recurrentTask = (RecurrentTask) oldTask;
-//            recurrentTask.setInterval(((RecurrentTask) task).getInterval());
-//        }
+    public void editTask(int number, Map<String, String> updates) {
+        Task task = getTask(number);
+        if (updates.containsKey("title")) {
+            task.setTitle(updates.get("title"));
+        }
+        if (updates.containsKey("description")) {
+            task.setDescription(updates.get("description"));
+        }
+        if (updates.containsKey("deadline")) {
+            task.setDeadline(LocalDateTime.parse(updates.get("deadline"), DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")));
+        }
+        if (updates.containsKey("done")) {
+            task.setDone(Boolean.parseBoolean(updates.get("done")));
+        }
+        if (updates.containsKey("managerFirstName")) {
+            ((WorkTask) task).getManager().setFirstName(updates.get("managerFirstName"));
+        }
+        if (updates.containsKey("managerLastName")) {
+            ((WorkTask) task).getManager().setLastName(updates.get("managerLastName"));
+        }
+        if (updates.containsKey("managerEmail")) {
+            ((WorkTask) task).getManager().setEmail(updates.get("managerEmail"));
+        }
+        if (updates.containsKey("tag")) {
+            ((PersonalTask) task).setTag(Tag.fromString(updates.get("tag")));
+        }
+        if (updates.containsKey("frequency")) {
+            Duration newInterval = Duration.ofHours(Long.parseLong(updates.get("frequency")));
+            ((RecurrentTask) task).setInterval(newInterval);
+            int count = 0;
+            for (Task t : allTasks) {
+                if (t instanceof RecurrentTask recurrentTask && recurrentTask.getTitle().equals(task.getTitle()) && recurrentTask.getDeadline().isAfter(task.getDeadline())) {
+                    recurrentTask.setInterval(newInterval);
+                    recurrentTask.setDeadline(task.getDeadline().plus(newInterval.multipliedBy(++count)));
+                }
+            }
+        }
     }
 
     public void removeTask(int number) {
