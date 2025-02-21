@@ -14,3 +14,6 @@
 2025-02-21 23:17:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 4
 2025-02-21 23:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 0
 2025-02-21 23:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-21 23:41:53 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-21 23:41:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-21 23:41:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
