@@ -8,182 +8,255 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ToDoListApp {
+    private static final Logger logger = LogManager.getLogger(ToDoListApp.class);
+
     public static void main(String[] args) {
+        logger.info("ToDoList application started");
+
         ToDoList toDoList = new ToDoList();
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println(
-                    "------------------------\n" +
-                    "ToDoList - Main menu\n" +
-                    "------------------------\n" +
-                    "1 Add new task\n" +
-                    "2 Delete task\n" +
-                    "3 Edit task\n" +
-                    "4 View all tasks\n" +
-                    "5 View uncompleted tasks\n" +
-                    "6 View completed tasks\n" +
-                    "7 View work tasks\n" +
-                    "8 View personal tasks\n" +
-                    "9 View recurrent tasks\n" +
-                    "------------------------\n" +
-                    "0 Exit program\n" +
-                    "------------------------\n" +
-                    "Enter your choice (number):"
+                    """
+                            ------------------------
+                            ToDoList - Main menu
+                            ------------------------
+                            1 Add new task
+                            2 Delete task
+                            3 Edit task
+                            4 View all tasks
+                            5 View uncompleted tasks
+                            6 View completed tasks
+                            7 View work tasks
+                            8 View personal tasks
+                            9 View recurrent tasks
+                            ------------------------
+                            0 Exit program
+                            ------------------------
+                            Enter your choice (number):"""
             );
 
-            int choice = scanner.nextInt();
+            int choice = 0;
+            try {
+                choice = scanner.nextInt();
+                scanner.nextLine();
+
+                logger.info("User made a choice in the main menu: {}", choice);
+            } catch (Exception e) {
+                logger.error("Unexpected choice in the main menu: {}", choice, e);
+            }
+
             switch (choice) {
-                case 0 -> System.exit(0);
+                case 0 -> {
+                    logger.info("Exiting ToDoList application");
+                    System.exit(0);
+                }
                 case 1 -> {
                     System.out.println("Enter task title:");
-                    String title = scanner.next();
-                    scanner.nextLine();
+                    String title = scanner.nextLine();
                     System.out.println("Enter task description:");
                     String description = scanner.nextLine();
                     System.out.println("Enter task deadline as HH:mm yyyy-MM-dd:");
                     String deadline = scanner.nextLine();
                     System.out.println("Is it a work, personal or recurrent task?");
-                    String type = scanner.next();
+                    String type = scanner.nextLine();
+
+                    logger.info("Adding new task: Title={}, Type={}", title, type);
 
                     switch (type) {
                         case "work" -> {
                             System.out.println("Enter task manager first name:");
-                            String managerFirstName = scanner.next();
+                            String managerFirstName = scanner.nextLine();
                             System.out.println("Enter task manager last name:");
-                            String managerLastName = scanner.next();
+                            String managerLastName = scanner.nextLine();
                             System.out.println("Enter task manager email:");
-                            String managerEmail = scanner.next();
+                            String managerEmail = scanner.nextLine();
 
-                            toDoList.addTask(new WorkTask(
-                                    title,
-                                    description,
-                                    LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")),
-                                    false,
-                                    new Manager(managerFirstName, managerLastName, managerEmail))
-                            );
+                            try {
+                                toDoList.addTask(new WorkTask(
+                                        title,
+                                        description,
+                                        LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")),
+                                        false,
+                                        new Manager(managerFirstName, managerLastName, managerEmail))
+                                );
+
+                                logger.info("New work task successfully added to the list");
+                            } catch (Exception e) {
+                                logger.error("Error adding task to the list", e);
+                            }
                         }
 
                         case "personal" -> {
                             System.out.println("Enter task tag:");
-                            String tag = scanner.next();
+                            String tag = scanner.nextLine();
 
-                            toDoList.addTask(new PersonalTask(
-                                    title,
-                                    description,
-                                    LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")),
-                                    false,
-                                    Tag.fromString(tag))
-                            );
+                            try {
+                                toDoList.addTask(new PersonalTask(
+                                        title,
+                                        description,
+                                        LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")),
+                                        false,
+                                        Tag.fromString(tag))
+                                );
+
+                                logger.info("New personal task successfully added to the list");
+                            } catch (Exception e) {
+                                logger.error("Error adding task to the list", e);
+                            }
                         }
 
                         case "recurrent" -> {
                             System.out.println("Enter task frequency in hours:");
                             int frequency = scanner.nextInt();
+                            scanner.nextLine();
                             System.out.println("Enter number of tasks:");
                             int number = scanner.nextInt();
+                            scanner.nextLine();
 
-                            for (int i = 0; i < number; i++) {
-                                toDoList.addTask(new RecurrentTask(title,
-                                        description,
-                                        LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")).plusHours((long) frequency * i),
-                                        false,
-                                        Duration.ofHours(frequency)));
+                            try {
+                                for (int i = 0; i < number; i++) {
+                                    toDoList.addTask(new RecurrentTask(title,
+                                            description,
+                                            LocalDateTime.parse(deadline, DateTimeFormatter.ofPattern("HH:mm yyyy-MM-dd")).plusHours((long) frequency * i),
+                                            false,
+                                            Duration.ofHours(frequency)));
+                                }
+
+                                logger.info("All recurrent tasks successfully added to the list");
+                            } catch (Exception e) {
+                                logger.error("Error adding Recurrent tasks to the list", e);
                             }
                         }
+
+                        default -> logger.error("Unexpected task type: " + type);
                     }
                 }
                 case 2 -> {
                     System.out.println("Enter task number:");
-                    int number = scanner.nextInt();
+                    int number = 0;
+                    try {
+                        number = scanner.nextInt();
+                        scanner.nextLine();
 
-                    toDoList.removeTask(number);
+                        logger.info("Removing task #{}", number);
+
+                        toDoList.removeTask(number);
+
+                        logger.info("Task #{} successfully removed from the list", number);
+                    } catch (Exception e) {
+                        logger.error("Error removing task{} from the list", number, e);
+                    }
                 }
                 case 3 -> {
                     System.out.println("Enter task number:");
                     int number = scanner.nextInt();
+                    scanner.nextLine();
+
+                    logger.info("Editing task #{}", number);
+
                     Task task = toDoList.getTask(number);
                     System.out.println(
                             "------------------------\n" +
-                            "Task editor\n");
+                            "Task editor");
                     System.out.printf("%-10s %-" + (task.getTitle().length() + 5) + "s %-" + (task.getDescription().length() + 5) + "s %-20s %-10s %-10s %n", "Number", "Title", "Description", "Deadline", "Done", "Addition");
                     printTask(task, task.getTitle().length(), task.getDescription().length());
-                    System.out.println("------------------------\n" +
-                            "1 Edit title\n" +
-                            "2 Edit description\n" +
-                            "3 Edit deadline\n" +
-                            "4 Mark as done");
+                    System.out.print(
+                            """
+                            ------------------------
+                            1 Edit title
+                            2 Edit description
+                            3 Edit deadline
+                            4 Mark as done
+                            """);
 
                     switch (task) {
-                        case WorkTask workTask -> System.out.println(
-                                "5 Edit manager first name\n" +
-                                "6 Edit manager last name\n" +
-                                "7 Edit manager email");
-                        case PersonalTask personalTask -> System.out.println("5 Edit tag");
-                        case RecurrentTask recurrentTask -> System.out.println("5 Edit frequency");
-                        default -> throw new IllegalStateException("Unexpected task value: " + task);
+                        case WorkTask ignored -> System.out.println(
+                                """
+                                5 Edit manager first name
+                                6 Edit manager last name
+                                7 Edit manager email
+                                """);
+                        case PersonalTask ignored -> System.out.println("5 Edit tag");
+                        case RecurrentTask ignored -> System.out.println("5 Edit frequency");
+                        default -> logger.error("Unexpected task value: {}", task);
                     }
 
-                    System.out.println("------------------------\n" +
-                            "0 Return to main menu\n" +
-                            "------------------------\n" +
-                            "Enter your choice (number):");
+                    System.out.print(
+                            """
+                            ------------------------
+                            0 Return to main menu
+                            ------------------------
+                            Enter your choice (number):
+                            """);
 
                     choice = scanner.nextInt();
-                    Map<String, String> updates = new HashMap<>();
-                    if (choice != 0) {
-                        switch (choice) {
-                            case 1 -> {
-                                System.out.println("Enter new task title:");
-                                String title = scanner.next();
-                                updates.put("title", title.trim());
-                            }
-                            case 2 -> {
-                                System.out.println("Enter new task description:");
-                                String description = scanner.next();
-                                updates.put("description", description.trim());
-                            }
-                            case 3 -> {
-                                System.out.println("Enter new task deadline as HH:mm yyyy-MM-dd:");
-                                String deadline = scanner.next();
-                                updates.put("deadline", deadline.trim());
-                            }
-                            case 4 -> updates.put("done", "true");
-                            case 5 -> {
-                                switch (task) {
-                                    case WorkTask workTask -> {
-                                        System.out.println("Enter new task manager first name:");
-                                        String managerFirstName = scanner.next();
-                                        updates.put("managerFirstName", managerFirstName.trim());
-                                    }
-                                    case PersonalTask personalTask -> {
-                                        System.out.println("Enter new task tag:");
-                                        String tag = scanner.next();
-                                        updates.put("tag", tag.trim());
-                                    }
-                                    case RecurrentTask recurrentTask -> {
-                                        System.out.println("Enter new task frequency:");
-                                        String frequency = scanner.next();
-                                        updates.put("frequency", frequency.trim());
-                                    }
-                                    default -> throw new IllegalStateException("Unexpected task value: " + task);
-                                }
-                            }
-                            case 6 -> {
-                                System.out.println("Enter new task manager last name:");
-                                String managerLastName = scanner.next();
-                                updates.put("managerLastName", managerLastName.trim());
-                            }
-                            case 7 -> {
-                                System.out.println("Enter new task manager email:");
-                                String managerEmail = scanner.next();
-                                updates.put("managerEmail", managerEmail.trim());
-                            }
-                            default -> throw new IllegalStateException("Unexpected choice: " + choice);
-                        }
-                    }
+                    scanner.nextLine();
+                    logger.info("User made a choice in the editing menu: {}", choice);
 
-                    toDoList.editTask(number, updates);
+                    Map<String, String> updates = new HashMap<>();
+                    try {
+                        if (choice != 0) {
+                            switch (choice) {
+                                case 1 -> {
+                                    System.out.println("Enter new task title:");
+                                    String title = scanner.nextLine();
+                                    updates.put("title", title.trim());
+                                }
+                                case 2 -> {
+                                    System.out.println("Enter new task description:");
+                                    String description = scanner.nextLine();
+                                    updates.put("description", description.trim());
+                                }
+                                case 3 -> {
+                                    System.out.println("Enter new task deadline as HH:mm yyyy-MM-dd:");
+                                    String deadline = scanner.nextLine();
+                                    updates.put("deadline", deadline.trim());
+                                }
+                                case 4 -> updates.put("done", "true");
+                                case 5 -> {
+                                    switch (task) {
+                                        case WorkTask ignored -> {
+                                            System.out.println("Enter new task manager first name:");
+                                            String managerFirstName = scanner.nextLine();
+                                            updates.put("managerFirstName", managerFirstName.trim());
+                                        }
+                                        case PersonalTask ignored -> {
+                                            System.out.println("Enter new task tag:");
+                                            String tag = scanner.nextLine();
+                                            updates.put("tag", tag.trim());
+                                        }
+                                        case RecurrentTask ignored -> {
+                                            System.out.println("Enter new task frequency:");
+                                            String frequency = scanner.nextLine();
+                                            updates.put("frequency", frequency.trim());
+                                        }
+                                        default -> logger.error("Unexpected task value for edit: {}", task);
+                                    }
+                                }
+                                case 6 -> {
+                                    System.out.println("Enter new task manager last name:");
+                                    String managerLastName = scanner.nextLine();
+                                    updates.put("managerLastName", managerLastName.trim());
+                                }
+                                case 7 -> {
+                                    System.out.println("Enter new task manager email:");
+                                    String managerEmail = scanner.nextLine();
+                                    updates.put("managerEmail", managerEmail.trim());
+                                }
+                                default -> logger.error("Unexpected choice while editing: {}", choice);
+                            }
+                        }
+
+                        toDoList.editTask(number, updates);
+                        logger.info("Task #{} successfully edited", number);
+                    } catch (Exception e) {
+                        logger.error("Error editing task #{}", number, e);
+                    }
                 }
                 case 4 -> {
                     List<Task> tasks = toDoList.getAllTasks();
@@ -209,7 +282,7 @@ public class ToDoListApp {
                     List<Task> tasks = toDoList.getRecurrentTasks();
                     printToDoList(tasks);
                 }
-                default -> throw new IllegalStateException("Unexpected choice: " + choice);
+                default -> logger.error("Unexpected choice: {}", choice);
             }
         }
     }
@@ -251,7 +324,7 @@ public class ToDoListApp {
             }
             case PersonalTask personalTask -> System.out.printf("%-10s %n", "Tag: " + personalTask.getTag());
             case RecurrentTask recurrentTask -> System.out.printf("%-10s %n", "Interval (h): " + recurrentTask.getInterval().toHours());
-            default -> throw new IllegalStateException("Unexpected value: " + task);
+            default -> logger.error("Unexpected value: " + task);
         }
     }
 }

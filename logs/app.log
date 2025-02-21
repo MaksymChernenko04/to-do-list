@@ -1,0 +1,16 @@
+2025-02-21 23:12:06 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-21 23:12:12 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 1
+2025-02-21 23:13:46 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Work report, Type=work
+2025-02-21 23:15:18 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New work task successfully added to the list
+2025-02-21 23:15:21 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 4
+2025-02-21 23:15:34 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 1
+2025-02-21 23:16:13 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Gym, Type=recurrent
+2025-02-21 23:16:17 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-21 23:16:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 4
+2025-02-21 23:16:32 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 3
+2025-02-21 23:16:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Editing task #4
+2025-02-21 23:16:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 3
+2025-02-21 23:16:59 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #4 successfully edited
+2025-02-21 23:17:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 4
+2025-02-21 23:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice: 0
+2025-02-21 23:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
