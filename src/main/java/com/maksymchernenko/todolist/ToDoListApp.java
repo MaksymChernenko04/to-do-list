@@ -1,23 +1,39 @@
 package com.maksymchernenko.todolist;
 
+import java.io.File;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class ToDoListApp {
     private static final Logger logger = LogManager.getLogger(ToDoListApp.class);
+    private static final String FILE_NAME = "toDoList.json";
+    private static final ObjectMapper objectMapper = new ObjectMapper().registerModule(new JavaTimeModule()).enable(SerializationFeature.INDENT_OUTPUT);
 
     public static void main(String[] args) {
         logger.info("ToDoList application started");
 
         ToDoList toDoList = new ToDoList();
+        try {
+            File file = new File(FILE_NAME);
+            if (file.exists() && file.length() > 0) {
+                toDoList = objectMapper.readValue(file, ToDoList.class);
+            }
+
+            Task.counter = toDoList.getLastTaskNumber();
+
+            logger.info("To Do List successfully loaded from the file {}", FILE_NAME);
+        } catch (Exception e) {
+            logger.error("Error loading To Do List from the file {}", FILE_NAME, e);
+        }
+
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println(
@@ -35,7 +51,7 @@ public class ToDoListApp {
                             8 View personal tasks
                             9 View recurrent tasks
                             ------------------------
-                            0 Exit program
+                            0 Save and exit program
                             ------------------------
                             Enter your choice (number):"""
             );
@@ -52,6 +68,14 @@ public class ToDoListApp {
 
             switch (choice) {
                 case 0 -> {
+                    try {
+                        toDoList.setLastTaskNumber(Task.counter);
+                        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(FILE_NAME), toDoList);
+                        logger.info("To Do List successfully saved to the file {}", FILE_NAME);
+                    } catch (Exception e) {
+                        logger.error("Error saving To Do List to the file {}", FILE_NAME, e);
+                    }
+
                     logger.info("Exiting ToDoList application");
                     System.exit(0);
                 }

@@ -10,6 +10,8 @@ public class WorkTask extends Task {
 
     private Manager manager;
 
+    public WorkTask() {}
+
     public WorkTask(String title, String description, LocalDateTime deadline, boolean done, Manager manager) {
         super(title, description, deadline, done);
         this.manager = manager;

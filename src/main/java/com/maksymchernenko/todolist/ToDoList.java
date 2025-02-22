@@ -1,6 +1,7 @@
 package com.maksymchernenko.todolist;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -14,10 +15,15 @@ import java.util.stream.Collectors;
 @Getter
 public class ToDoList {
     private final List<Task> allTasks;
+    @Setter
+    private int lastTaskNumber;
 
     public ToDoList() {
+        this.lastTaskNumber = 0;
         this.allTasks = new ArrayList<>();
     }
+
+    public ToDoList(List<Task> taskList) { allTasks = new ArrayList<>(taskList); }
 
     public void addTask(Task task) {
         allTasks.add(task);
