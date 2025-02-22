@@ -17,3 +17,336 @@
 2025-02-21 23:41:53 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
 2025-02-21 23:41:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
 2025-02-21 23:41:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:12:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:12:50 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:14:39 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:14:39 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:14:43 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:15:10 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=HelloWorldTask, Type=recurrent
+2025-02-22 15:15:14 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:15:16 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:15:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:15:28 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:15:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:16:13 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:16:13 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:16:17 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:21:09 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:21:09 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:21:14 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:21:18 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:21:33 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=erign, Type=recurrent
+2025-02-22 15:21:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:21:37 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:21:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:21:42 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:21:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:22:35 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:22:35 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:22:39 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:22:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eroig, Type=recurrent
+2025-02-22 15:22:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:22:56 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:23:03 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:23:03 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:23:03 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:26:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:26:22 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:26:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:26:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:26:38 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=idrgn, Type=recurrent
+2025-02-22 15:26:40 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:26:41 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:26:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:26:44 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:26:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:29:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:29:28 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:29:30 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:29:46 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=erkgn, Type=recurrent
+2025-02-22 15:29:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:29:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:29:53 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:29:53 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:29:53 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:31:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:31:11 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:31:14 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:31:26 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eriug, Type=recurrent
+2025-02-22 15:31:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:31:29 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:31:31 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:31:31 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:31:31 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:40:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:40:19 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:40:23 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:40:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=ofdthgn, Type=recurrent
+2025-02-22 15:40:38 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:40:39 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:40:41 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:40:41 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:40:41 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:44:30 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:44:30 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:44:31 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:44:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eriogh, Type=recurrent
+2025-02-22 15:44:46 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:44:47 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:44:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:44:49 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:44:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:48:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:48:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 15:48:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:48:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eriogn, Type=recurrent
+2025-02-22 15:48:57 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:48:58 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:48:59 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:49:00 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:49:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:50:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:50:48 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:51:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:51:02 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:51:09 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:51:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eriugti, Type=recurrent
+2025-02-22 15:51:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:51:25 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:51:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:51:36 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:51:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:53:03 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:53:03 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+2025-02-22 15:53:04 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:53:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=rtkjg trihgj, Type=personal
+2025-02-22 15:53:21 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New personal task successfully added to the list
+2025-02-22 15:53:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:53:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:53:24 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+2025-02-22 15:53:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:54:12 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:54:12 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.maksymchernenko.todolist.Task` (no Creators, like default constructor, exist): abstract types either need to be mapped to concrete types, have custom deserializer, or contain additional type information
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 18] (through reference chain: com.maksymchernenko.todolist.ToDoList["allTasks"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1888) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1375) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserialize(AbstractDeserializer.java:274) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:361) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:30) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4917) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3725) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.maksymchernenko.todolist.ToDoListApp.main(ToDoListApp.java:26) [classes/:?]
+2025-02-22 15:54:18 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:54:31 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=oerjg, Type=personal
+2025-02-22 15:54:32 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New personal task successfully added to the list
+2025-02-22 15:54:34 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:54:34 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error saving To Do List to the file toDoList.json
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDateTime` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.maksymchernenko.todolist.ToDoList["allTasks"]->java.util.ArrayList[0]->com.maksymchernenko.todolist.PersonalTask["deadline"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1328) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.impl.UnsupportedTypeSerializer.serialize(UnsupportedTypeSerializer.java:35) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:184) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:184) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:502) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:341) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1583) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectWriter._writeValueAndClose(ObjectWriter.java:1285) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1081) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.maksymchernenko.todolist.ToDoListApp.main(ToDoListApp.java:69) [classes/:?]
+2025-02-22 15:54:34 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:57:40 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:57:40 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected end-of-input within/between Object entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 15] (through reference chain: com.maksymchernenko.todolist.ToDoList["allTasks"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:402) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:373) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:381) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:30) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4917) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3725) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.maksymchernenko.todolist.ToDoListApp.main(ToDoListApp.java:27) [classes/:?]
+Caused by: com.fasterxml.jackson.core.io.JsonEOFException: Unexpected end-of-input within/between Object entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 15]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportInvalidEOF(ParserMinimalBase.java:641) ~[jackson-core-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3229) ~[jackson-core-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:3144) ~[jackson-core-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:761) ~[jackson-core-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromObject(AsPropertyTypeDeserializer.java:128) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserializeWithType(AbstractDeserializer.java:263) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:363) ~[jackson-databind-2.18.1.jar:2.18.1]
+	... 9 more
+2025-02-22 15:57:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 15:58:08 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=HelloWorldTask, Type=recurrent
+2025-02-22 15:58:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 15:58:13 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 15:58:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 15:58:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-22 15:58:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 15:58:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 15:58:54 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.maksymchernenko.todolist.RecurrentTask` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 4, column: 5] (through reference chain: com.maksymchernenko.todolist.ToDoList["allTasks"]->java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1888) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1375) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1512) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:348) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:220) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer._deserializeTypedForId(AsPropertyTypeDeserializer.java:170) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromObject(AsPropertyTypeDeserializer.java:136) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserializeWithType(AbstractDeserializer.java:263) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:363) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:30) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4917) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3725) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.maksymchernenko.todolist.ToDoListApp.main(ToDoListApp.java:27) [classes/:?]
+2025-02-22 15:58:57 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:02:33 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:02:33 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:02:36 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:02:56 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:03:33 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Report, Type=work
+2025-02-22 16:04:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New work task successfully added to the list
+2025-02-22 16:04:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:04:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 3
+2025-02-22 16:04:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Editing task #1
+2025-02-22 16:04:13 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the editing menu: 4
+2025-02-22 16:04:13 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #1 successfully edited
+2025-02-22 16:04:16 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 3
+2025-02-22 16:04:17 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Editing task #2
+2025-02-22 16:04:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the editing menu: 3
+2025-02-22 16:04:37 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #2 successfully edited
+2025-02-22 16:04:38 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:04:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 6
+2025-02-22 16:04:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 16:04:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-22 16:04:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 16:04:58 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:04:58 [main] ERROR com.maksymchernenko.todolist.ToDoListApp - Error loading To Do List from the file toDoList.json
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.maksymchernenko.todolist.Manager` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 50, column: 7] (through reference chain: com.maksymchernenko.todolist.ToDoList["allTasks"]->java.util.ArrayList[5]->com.maksymchernenko.todolist.WorkTask["manager"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1888) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1375) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1512) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:348) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:215) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer._deserializeTypedForId(AsPropertyTypeDeserializer.java:170) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromObject(AsPropertyTypeDeserializer.java:136) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.AbstractDeserializer.deserializeWithType(AbstractDeserializer.java:263) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:363) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:246) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:30) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:310) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4917) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3725) ~[jackson-databind-2.18.1.jar:2.18.1]
+	at com.maksymchernenko.todolist.ToDoListApp.main(ToDoListApp.java:27) [classes/:?]
+2025-02-22 16:05:01 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:05:58 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:05:58 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:06:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:06:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=oiertgj, Type=work
+2025-02-22 16:06:14 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New work task successfully added to the list
+2025-02-22 16:06:16 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:06:28 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=oterihj, Type=personal
+2025-02-22 16:06:31 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New personal task successfully added to the list
+2025-02-22 16:06:32 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:06:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 16:06:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-22 16:06:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 16:06:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:06:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:06:55 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:16:47 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:16:47 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:16:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:17:00 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #1
+2025-02-22 16:17:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #1 successfully removed from the list
+2025-02-22 16:17:04 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:17:09 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:10 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #1
+2025-02-22 16:17:10 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #1 successfully removed from the list
+2025-02-22 16:17:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #1
+2025-02-22 16:17:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #1 successfully removed from the list
+2025-02-22 16:17:18 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #2
+2025-02-22 16:17:19 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #2 successfully removed from the list
+2025-02-22 16:17:20 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:20 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #2
+2025-02-22 16:17:20 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #2 successfully removed from the list
+2025-02-22 16:17:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:23 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #3
+2025-02-22 16:17:23 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #3 successfully removed from the list
+2025-02-22 16:17:23 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #4
+2025-02-22 16:17:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #4 successfully removed from the list
+2025-02-22 16:17:25 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-22 16:17:25 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #5
+2025-02-22 16:17:25 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #5 successfully removed from the list
+2025-02-22 16:17:26 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:17:29 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:17:43 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=oirgo, Type=recurrent
+2025-02-22 16:17:46 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-22 16:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 16:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-22 16:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 16:17:52 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:17:52 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:17:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:17:57 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:18:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=iuhgd, Type=work
+2025-02-22 16:18:14 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New work task successfully added to the list
+2025-02-22 16:18:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:31:27 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:31:27 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:31:29 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:33:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:33:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:33:46 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:33:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-22 16:34:01 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=eroigj, Type=personal
+2025-02-22 16:34:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New personal task successfully added to the list
+2025-02-22 16:34:03 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-22 16:34:06 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-22 16:34:07 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-22 16:34:07 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application
+2025-02-22 16:34:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-22 16:34:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-22 16:34:12 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4

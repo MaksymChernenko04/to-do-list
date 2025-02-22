@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
-        <File name="File" fileName="logs/app.log">
+        <RollingFile name="File" fileName="logs/app.log" filePattern="logs/app-%d{yyyy-MM-dd}-%i.log.gz">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c - %m%n"/>
+
             <Policies>
                 <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
-        </File>
-    </Appenders>
 
+            <DefaultRolloverStrategy max="30" fileIndex="min" />
+        </RollingFile>
+    </Appenders>
     <Loggers>
         <Root level="info">
             <AppenderRef ref="File"/>
