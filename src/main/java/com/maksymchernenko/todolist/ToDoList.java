@@ -12,23 +12,56 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Represents a to-do list that manages a collection of tasks.
+ * <p>
+ * This class provides methods to add, edit, remove, and retrieve different types of tasks,
+ * as well as filter tasks based on their completion status or category.
+ * </p>
+ */
 @Getter
 public class ToDoList {
+    /**
+     * The collection of the tasks.
+     */
     private final List<Task> allTasks;
+    /**
+     * Stores the number of the last added task.
+     */
     @Setter
     private int lastTaskNumber;
 
+    /**
+     * Constructs an empty to-do list
+     */
     public ToDoList() {
         this.lastTaskNumber = 0;
         this.allTasks = new ArrayList<>();
     }
 
+    /**
+     * Creates a to-do list with a predefined set of tasks.
+     *
+     * @param taskList predefined set of tasks
+     */
     public ToDoList(List<Task> taskList) { allTasks = new ArrayList<>(taskList); }
 
+    /**
+     * Adds a new task to the to-do list.
+     *
+     * @param task the task to be added
+     */
     public void addTask(Task task) {
         allTasks.add(task);
     }
 
+    /**
+     * Edits an existing task in the to-do list based on the provided updates.
+     *
+     * @param number the unique number of the task to edit
+     * @param updates a map containing field names as keys and updated values as values
+     * @throws IllegalArgumentException if the task with the given number is not found
+     */
     public void editTask(int number, Map<String, String> updates) {
         Task task = getTask(number);
         if (updates.containsKey("title")) {
@@ -68,10 +101,23 @@ public class ToDoList {
         }
     }
 
+    /**
+     * Removes a task from the list.
+     *
+     * @param number the unique number of the task to remove
+     * @throws IllegalArgumentException if the task with the given number is not found
+     */
     public void removeTask(int number) {
         allTasks.remove(getTask(number));
     }
 
+    /**
+     * Retrieves a task from the list.
+     *
+     * @param number the unique number of the task to retrieve
+     * @return the task associated with the given number
+     * @throws IllegalArgumentException if the task with the given number is not found
+     */
     public Task getTask(int number) {
         for (Task task : allTasks) {
             if (task.getNumber() == number) {
@@ -82,6 +128,11 @@ public class ToDoList {
         throw new IllegalArgumentException("No task with number " + number + " in this list");
     }
 
+    /**
+     * Retrieves all completed tasks from the list sorted by deadline.
+     *
+     * @return a list of completed tasks sorted by deadline
+     */
     public List<Task> getCompletedTasks() {
         return allTasks.stream()
                 .filter(Task::isDone)
@@ -89,6 +140,11 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Retrieves all uncompleted tasks from the list sorted by deadline.
+     *
+     * @return a list of uncompleted tasks sorted by deadline
+     */
     public List<Task> getUncompletedTasks() {
         return allTasks.stream()
                 .filter(task -> !task.isDone())
@@ -96,6 +152,11 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Retrieves all work tasks from the list sorted by manager.
+     *
+     * @return a list of work tasks sorted by manager
+     */
     public List<Task> getWorkTasks() {
         List<WorkTask> workTasks = new ArrayList<>();
         for (Task task : allTasks) {
@@ -109,6 +170,11 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Retrieves all personal tasks from the list sorted by tag.
+     *
+     * @return a list of personal tasks sorted by tag
+     */
     public List<Task> getPersonalTasks() {
         List<PersonalTask> personalTasks = new ArrayList<>();
         for (Task task : allTasks) {
@@ -122,6 +188,11 @@ public class ToDoList {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Retrieves all recurrent tasks from the list sorted by deadline.
+     *
+     * @return a list of recurrent tasks sorted by deadline
+     */
     public List<Task> getRecurrentTasks() {
         List<RecurrentTask> recurrentTasks = new ArrayList<>();
         for (Task task : allTasks) {

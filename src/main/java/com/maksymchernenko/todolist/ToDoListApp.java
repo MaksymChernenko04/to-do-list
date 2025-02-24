@@ -12,11 +12,60 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * The entry point of the ToDoList application.
+ * <p>
+ * This application allows users to manage a to-do list by adding, editing,
+ * deleting, and filtering tasks. Tasks can be categorized as work, personal,
+ * or recurrent. The application persists data in a JSON file.
+ * </p>
+ * <p>
+ * Features:
+ * <ul>
+ *     <li>Add new tasks (work, personal, recurrent)</li>
+ *     <li>Edit tasks (title, description, deadline, etc.)</li>
+ *     <li>Delete tasks</li>
+ *     <li>View tasks by category</li>
+ *     <li>Save and load tasks from a JSON file</li>
+ * </ul>
+ * </p>
+ */
 public class ToDoListApp {
+    /**
+     * Logger instance for recording application events and errors.
+     * <p>
+     * Used to track the application's behavior and help diagnose issues.
+     * All logs are stored in <code>logs/app.log</code>.
+     * </p>
+     */
     private static final Logger logger = LogManager.getLogger(ToDoListApp.class);
+    /**
+     * The name of the JSON file used to persist the to-do list state.
+     * <p>
+     * This file is read at startup and updated when the application exits.
+     * </p>
+     */
     private static final String FILE_NAME = "toDoList.json";
+    /**
+     * ObjectMapper for serializing and deserializing the to-do list.
+     * <p>
+     * Configured to:
+     * <ul>
+     *     <li>Support Java 8 Date/Time API (`JavaTimeModule`).</li>
+     *     <li>Format JSON output with indentation for better readability.</li>
+     * </ul>
+     * </p>
+     */
     private static final ObjectMapper objectMapper = new ObjectMapper().registerModule(new JavaTimeModule()).enable(SerializationFeature.INDENT_OUTPUT);
 
+    /**
+     * The main method that starts the ToDoList application.
+     * <p>
+     * It loads tasks from a JSON file, displays a menu, and processes user input.
+     * </p>
+     *
+     * @param args command-line arguments (currently not used).
+     */
     public static void main(String[] args) {
         logger.info("ToDoList application started");
 
@@ -311,6 +360,15 @@ public class ToDoListApp {
         }
     }
 
+    /**
+     * Prints the list of tasks in a formatted table.
+     * <p>
+     * This method dynamically adjusts column widths based on task titles
+     * and descriptions to improve readability.
+     * </p>
+     *
+     * @param tasks the list of tasks to print
+     */
     static void printToDoList(List<Task> tasks) {
         int maxDescriptionLength = tasks.stream()
                 .mapToInt(task -> task.getDescription().length())
@@ -333,6 +391,16 @@ public class ToDoListApp {
         }
     }
 
+    /**
+     * Prints a single task in a formatted table row.
+     * <p>
+     * The method ensures proper spacing and formatting for different task types.
+     * </p>
+     *
+     * @param task                 the task to print
+     * @param maxTitleLength       maximum title length for alignment
+     * @param maxDescriptionLength maximum description length for alignment
+     */
     static void printTask(Task task, int maxTitleLength, int maxDescriptionLength) {
         System.out.printf("%-10s %-" + (maxTitleLength + 5) + "s %-" + (maxDescriptionLength + 5) + "s %-20s %-10s",
                 task.getNumber(),

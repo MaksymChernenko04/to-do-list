@@ -350,3 +350,48 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 2025-02-22 16:34:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
 2025-02-22 16:34:11 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
 2025-02-22 16:34:12 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:17:34 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - ToDoList application started
+2025-02-24 19:17:34 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully loaded from the file toDoList.json
+2025-02-24 19:17:38 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:17:43 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #1
+2025-02-24 19:17:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #1 successfully removed from the list
+2025-02-24 19:17:47 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #2
+2025-02-24 19:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #2 successfully removed from the list
+2025-02-24 19:17:48 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #3
+2025-02-24 19:17:49 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #3 successfully removed from the list
+2025-02-24 19:17:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #4
+2025-02-24 19:17:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #4 successfully removed from the list
+2025-02-24 19:17:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #5
+2025-02-24 19:17:51 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #5 successfully removed from the list
+2025-02-24 19:17:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 2
+2025-02-24 19:17:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Removing task #6
+2025-02-24 19:17:54 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #6 successfully removed from the list
+2025-02-24 19:17:56 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:18:04 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-24 19:19:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Prepare report, Type=work
+2025-02-24 19:19:26 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New work task successfully added to the list
+2025-02-24 19:19:35 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-24 19:20:02 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Gym session, Type=personal
+2025-02-24 19:20:04 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - New personal task successfully added to the list
+2025-02-24 19:20:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 1
+2025-02-24 19:20:35 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Adding new task: Title=Daily stand-up meeting, Type=recurrent
+2025-02-24 19:20:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - All recurrent tasks successfully added to the list
+2025-02-24 19:21:16 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:21:42 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 3
+2025-02-24 19:21:44 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Editing task #10
+2025-02-24 19:21:50 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the editing menu: 3
+2025-02-24 19:22:01 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #10 successfully edited
+2025-02-24 19:22:03 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:22:15 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 3
+2025-02-24 19:22:22 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Editing task #8
+2025-02-24 19:22:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the editing menu: 4
+2025-02-24 19:22:24 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Task #8 successfully edited
+2025-02-24 19:22:27 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 4
+2025-02-24 19:22:37 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - User made a choice in the main menu: 0
+2025-02-24 19:22:37 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - To Do List successfully saved to the file toDoList.json
+2025-02-24 19:22:37 [main] INFO  com.maksymchernenko.todolist.ToDoListApp - Exiting ToDoList application

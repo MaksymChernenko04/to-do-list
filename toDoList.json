@@ -1,152 +1,188 @@
 {
   "allTasks" : [ {
-    "type" : "recurrent",
-    "number" : 1,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
+    "type" : "work",
+    "number" : 7,
+    "title" : "Prepare report",
+    "description" : "Compile the quarterly financial report and send it to the manager.",
+    "deadline" : [ 2025, 3, 1, 15, 30 ],
     "done" : false,
-    "interval" : 86400.000000000
-  }, {
-    "type" : "recurrent",
-    "number" : 2,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 23, 12, 0 ],
-    "done" : false,
-    "interval" : 86400.000000000
-  }, {
-    "type" : "recurrent",
-    "number" : 3,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 24, 12, 0 ],
-    "done" : false,
-    "interval" : 86400.000000000
-  }, {
-    "type" : "recurrent",
-    "number" : 4,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 25, 12, 0 ],
-    "done" : false,
-    "interval" : 86400.000000000
-  }, {
-    "type" : "recurrent",
-    "number" : 5,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 26, 12, 0 ],
-    "done" : false,
-    "interval" : 86400.000000000
+    "manager" : {
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "email" : "john.doe@example.com"
+    }
   }, {
     "type" : "personal",
-    "number" : 6,
-    "title" : "eroigj",
-    "description" : "prowegfj oiergtho",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
-    "done" : false,
+    "number" : 8,
+    "title" : "Gym session",
+    "description" : "Attend a strength training workout at the gym.",
+    "deadline" : [ 2025, 2, 25, 18, 0 ],
+    "done" : true,
     "tag" : "OTHER"
+  }, {
+    "type" : "recurrent",
+    "number" : 9,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 26, 9, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
+  }, {
+    "type" : "recurrent",
+    "number" : 10,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 27, 10, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
+  }, {
+    "type" : "recurrent",
+    "number" : 11,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 28, 9, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
+  }, {
+    "type" : "recurrent",
+    "number" : 12,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 1, 9, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
+  }, {
+    "type" : "recurrent",
+    "number" : 13,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 2, 9, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
   } ],
-  "lastTaskNumber" : 6,
+  "lastTaskNumber" : 13,
   "personalTasks" : [ {
     "type" : "personal",
-    "number" : 6,
-    "title" : "eroigj",
-    "description" : "prowegfj oiergtho",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
-    "done" : false,
+    "number" : 8,
+    "title" : "Gym session",
+    "description" : "Attend a strength training workout at the gym.",
+    "deadline" : [ 2025, 2, 25, 18, 0 ],
+    "done" : true,
     "tag" : "OTHER"
   } ],
-  "workTasks" : [ ],
   "recurrentTasks" : [ {
     "type" : "recurrent",
-    "number" : 1,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
+    "number" : 9,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 26, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 2,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 23, 12, 0 ],
+    "number" : 10,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 27, 10, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 3,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 24, 12, 0 ],
+    "number" : 11,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 28, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 4,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 25, 12, 0 ],
+    "number" : 12,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 1, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 5,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 26, 12, 0 ],
+    "number" : 13,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 2, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   } ],
-  "completedTasks" : [ ],
+  "completedTasks" : [ {
+    "type" : "personal",
+    "number" : 8,
+    "title" : "Gym session",
+    "description" : "Attend a strength training workout at the gym.",
+    "deadline" : [ 2025, 2, 25, 18, 0 ],
+    "done" : true,
+    "tag" : "OTHER"
+  } ],
+  "workTasks" : [ {
+    "type" : "work",
+    "number" : 7,
+    "title" : "Prepare report",
+    "description" : "Compile the quarterly financial report and send it to the manager.",
+    "deadline" : [ 2025, 3, 1, 15, 30 ],
+    "done" : false,
+    "manager" : {
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "email" : "john.doe@example.com"
+    }
+  } ],
   "uncompletedTasks" : [ {
     "type" : "recurrent",
-    "number" : 1,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
-    "done" : false,
-    "interval" : 86400.000000000
-  }, {
-    "type" : "personal",
-    "number" : 6,
-    "title" : "eroigj",
-    "description" : "prowegfj oiergtho",
-    "deadline" : [ 2025, 2, 22, 12, 0 ],
-    "done" : false,
-    "tag" : "OTHER"
-  }, {
-    "type" : "recurrent",
-    "number" : 2,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 23, 12, 0 ],
+    "number" : 9,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 26, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 3,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 24, 12, 0 ],
+    "number" : 10,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 27, 10, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 4,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 25, 12, 0 ],
+    "number" : 11,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 2, 28, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   }, {
     "type" : "recurrent",
-    "number" : 5,
-    "title" : "oirgo",
-    "description" : "orejg roiegjo",
-    "deadline" : [ 2025, 2, 26, 12, 0 ],
+    "number" : 12,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 1, 9, 0 ],
+    "done" : false,
+    "interval" : 86400.000000000
+  }, {
+    "type" : "work",
+    "number" : 7,
+    "title" : "Prepare report",
+    "description" : "Compile the quarterly financial report and send it to the manager.",
+    "deadline" : [ 2025, 3, 1, 15, 30 ],
+    "done" : false,
+    "manager" : {
+      "firstName" : "John",
+      "lastName" : "Doe",
+      "email" : "john.doe@example.com"
+    }
+  }, {
+    "type" : "recurrent",
+    "number" : 13,
+    "title" : "Daily stand-up meeting",
+    "description" : "Attend the daily stand-up meeting with the team.",
+    "deadline" : [ 2025, 3, 2, 9, 0 ],
     "done" : false,
     "interval" : 86400.000000000
   } ]
